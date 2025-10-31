@@ -1,98 +1,14 @@
 [
-  {
-    "id": 1,
-    "tipo": "R",
-    "valor": 3500.0,
-    "categoria": "Salário",
-    "data": "01/11/2025",
-    "descricao": "Salário mensal - CLT"
-  },
-  {
-    "id": 2,
-    "tipo": "R",
-    "valor": 800.0,
-    "categoria": "Freelance",
-    "data": "05/11/2025",
-    "descricao": "Projeto de design gráfico"
-  },
-  {
-    "id": 3,
-    "tipo": "D",
-    "valor": 1200.0,
-    "categoria": "Aluguel",
-    "data": "05/11/2025",
-    "descricao": "Aluguel do apartamento"
-  },
-  {
-    "id": 4,
-    "tipo": "D",
-    "valor": 350.0,
-    "categoria": "Supermercado",
-    "data": "07/11/2025",
-    "descricao": "Compras do mês - Pão de Açúcar"
-  },
-  {
-    "id": 5,
-    "tipo": "D",
-    "valor": 180.0,
-    "categoria": "Transporte",
-    "data": "10/11/2025",
-    "descricao": "Uber + metrô (semana)"
-  },
-  {
-    "id": 6,
-    "tipo": "D",
-    "valor": 89.9,
-    "categoria": "Internet",
-    "data": "12/11/2025",
-    "descricao": "Vivo Fibra 300MB"
-  },
-  {
-    "id": 7,
-    "tipo": "D",
-    "valor": 45.0,
-    "categoria": "Lazer",
-    "data": "15/11/2025",
-    "descricao": "Cinema com amigos"
-  },
-  {
-    "id": 8,
-    "tipo": "R",
-    "valor": 200.0,
-    "categoria": "Reembolso",
-    "data": "18/11/2025",
-    "descricao": "Reembolso de passagem"
-  },
-  {
-    "id": 9,
-    "tipo": "D",
-    "valor": 220.0,
-    "categoria": "Saúde",
-    "data": "20/11/2025",
-    "descricao": "Consulta odontológica"
-  },
-  {
-    "id": 10,
-    "tipo": "D",
-    "valor": 150.0,
-    "categoria": "Educação",
-    "data": "22/11/2025",
-    "descricao": "Curso online Python"
-  },
-  {
-    "id": 11,
-    "tipo": "D",
-    "valor": 60.0,
-    "categoria": "Assinaturas",
-    "data": "25/11/2025",
-    "descricao": "Netflix + Spotify"
-  },
-  {
-    "id": 12,
-    "tipo": "D",
-    "valor": 95.0,
-    "categoria": "Lazer",
-    "data": "28/11/2025",
-    "descricao": "Jantar fora"
-  }
+  {"id":1,"tipo":"R","valor":3500.0,"categoria":"Salário","data":"01/11/2025","descricao":"Salário mensal - CLT"},
+  {"id":2,"tipo":"R","valor":800.0,"categoria":"Freelance","data":"05/11/2025","descricao":"Projeto de design gráfico"},
+  {"id":3,"tipo":"D","valor":1200.0,"categoria":"Aluguel","data":"05/11/2025","descricao":"Aluguel do apartamento"},
+  {"id":4,"tipo":"D","valor":350.0,"categoria":"Supermercado","data":"07/11/2025","descricao":"Compras do mês"},
+  {"id":5,"tipo":"D","valor":180.0,"categoria":"Transporte","data":"10/11/2025","descricao":"Uber + metrô"},
+  {"id":6,"tipo":"D","valor":89.9,"categoria":"Internet","data":"12/11/2025","descricao":"Vivo Fibra"},
+  {"id":7,"tipo":"D","valor":45.0,"categoria":"Lazer","data":"15/11/2025","descricao":"Cinema"},
+  {"id":8,"tipo":"R","valor":200.0,"categoria":"Reembolso","data":"18/11/2025","descricao":"Passagem"},
+  {"id":9,"tipo":"D","valor":220.0,"categoria":"Saúde","data":"20/11/2025","descricao":"Dentista"},
+  {"id":10,"tipo":"D","valor":150.0,"categoria":"Educação","data":"22/11/2025","descricao":"Curso Python"},
+  {"id":11,"tipo":"D","valor":60.0,"categoria":"Assinaturas","data":"25/11/2025","descricao":"Netflix + Spotify"},
+  {"id":12,"tipo":"D","valor":95.0,"categoria":"Lazer","data":"28/11/2025","descricao":"Jantar fora"}
 ]
