@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dentista - Limpeza",
+    "data": "15/11/2025",
+    "hora": "14:30",
+    "local": "Clínica Sorriso - Av. Paulista",
+    "descricao": "Limpeza anual + avaliação"
+  },
+  {
+    "id": 2,
+    "titulo": "Reunião UNISA - Projeto Integrador",
+    "data": "20/11/2025",
+    "hora": "09:00",
+    "local": "Sala 305 - Campus I",
+    "descricao": "Apresentação final do projeto"
+  },
+  {
+    "id": 3,
+    "titulo": "Entrega de Relatório Final",
+    "data": "25/11/2025",
+    "hora": "23:59",
+    "local": "AVA UNISA",
+    "descricao": "Submissão do PDF + GitHub"
+  },
+  {
+    "id": 4,
+    "titulo": "Consulta Médica - Cardiologista",
+    "data": "30/11/2025",
+    "hora": "10:15",
+    "local": "Hospital São Luiz",
+    "descricao": "Check-up anual"
+  },
+  {
+    "id": 5,
+    "titulo": "Aniversário da Mãe",
+    "data": "05/12/2025",
+    "hora": "19:00",
+    "local": "Casa da Família",
+    "descricao": "Jantar + presente"
+  },
+  {
+    "id": 6,
+    "titulo": "Prova de Cálculo II",
+    "data": "10/12/2025",
+    "hora": "08:00",
+    "local": "Sala 102",
+    "descricao": "Estudar integrais"
+  },
+  {
+    "id": 7,
+    "titulo": "Pagamento Fatura Cartão",
+    "data": "08/12/2025",
+    "hora": "23:59",
+    "local": "App Banco",
+    "descricao": "Vencimento fatura Nubank"
+  },
+  {
+    "id": 8,
+    "titulo": "Entrevista de Emprego",
+    "data": "12/12/2025",
+    "hora": "15:00",
+    "local": "Google Meet",
+    "descricao": "Vaga de Estágio Python"
+  },
+  {
+    "id": 9,
+    "titulo": "Vacina Gripe",
+    "data": "18/12/2025",
+    "hora": "11:00",
+    "local": "Posto de Saúde",
+    "descricao": "Dose anual"
+  },
+  {
+    "id": 10,
+    "titulo": "Férias - Viagem",
+    "data": "20/12/2025",
+    "hora": "07:00",
+    "local": "Aeroporto de Congonhas",
+    "descricao": "Voo para Rio de Janeiro"
+  }
+]
