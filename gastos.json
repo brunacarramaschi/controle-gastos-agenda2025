@@ -2,7 +2,7 @@
   {
     "id": 1,
     "tipo": "R",
-    "valor": 3000.0,
+    "valor": 4500.0,
     "categoria": "Salário",
     "data": "01/11/2025",
     "descricao": "Salário mensal"
@@ -10,89 +10,89 @@
   {
     "id": 2,
     "tipo": "D",
-    "valor": 800.0,
-    "categoria": "Aluguel",
+    "valor": 1200.0,
+    "categoria": "Moradia",
     "data": "05/11/2025",
-    "descricao": "Aluguel apartamento"
+    "descricao": "Aluguel mensal"
   },
   {
     "id": 3,
     "tipo": "D",
-    "valor": 150.0,
-    "categoria": "Supermercado",
+    "valor": 450.0,
+    "categoria": "Alimentação",
     "data": "07/11/2025",
-    "descricao": "Compras semanais"
+    "descricao": "Compras no supermercado"
   },
   {
     "id": 4,
-    "tipo": "R",
-    "valor": 500.0,
-    "categoria": "Freelance",
-    "data": "10/11/2025",
-    "descricao": "Projeto extra"
+    "tipo": "D",
+    "valor": 280.0,
+    "categoria": "Transporte",
+    "data": "08/11/2025",
+    "descricao": "Vale transporte e combustível"
   },
   {
     "id": 5,
     "tipo": "D",
-    "valor": 120.0,
-    "categoria": "Transporte",
-    "data": "12/11/2025",
-    "descricao": "Uber e metrô"
+    "valor": 150.0,
+    "categoria": "Saúde",
+    "data": "10/11/2025",
+    "descricao": "Consulta médica"
   },
   {
     "id": 6,
     "tipo": "D",
-    "valor": 80.0,
-    "categoria": "Lazer",
-    "data": "14/11/2025",
-    "descricao": "Cinema"
+    "valor": 350.0,
+    "categoria": "Educação",
+    "data": "12/11/2025",
+    "descricao": "Mensalidade curso online"
   },
   {
     "id": 7,
     "tipo": "D",
-    "valor": 300.0,
-    "categoria": "Educação",
-    "data": "15/11/2025",
-    "descricao": "Curso online"
+    "valor": 200.0,
+    "categoria": "Lazer",
+    "data": "14/11/2025",
+    "descricao": "Cinema e restaurante"
   },
   {
     "id": 8,
-    "tipo": "R",
-    "valor": 200.0,
-    "categoria": "Reembolso",
+    "tipo": "D",
+    "valor": 180.0,
+    "categoria": "Vestuário",
     "data": "16/11/2025",
-    "descricao": "Reembolso amigo"
+    "descricao": "Roupas e calçados"
   },
   {
     "id": 9,
     "tipo": "D",
-    "valor": 250.0,
-    "categoria": "Saúde",
+    "valor": 400.0,
+    "categoria": "Lazer",
     "data": "18/11/2025",
-    "descricao": "Consulta médica"
+    "descricao": "Viagem fim de semana"
   },
   {
     "id": 10,
     "tipo": "D",
-    "valor": 90.0,
-    "categoria": "Internet",
+    "valor": 900.0,
+    "categoria": "Investimentos",
     "data": "20/11/2025",
-    "descricao": "Fatura internet"
+    "descricao": "Aplicação em renda fixa"
   },
   {
     "id": 11,
     "tipo": "D",
-    "valor": 60.0,
-    "categoria": "Energia",
+    "valor": 250.0,
+    "categoria": "Alimentação",
     "data": "22/11/2025",
-    "descricao": "Conta de luz"
+    "descricao": "Compras complementares"
   },
   {
     "id": 12,
-    "tipo": "D",
-    "valor": 189.9,
-    "categoria": "Streaming",
-    "data": üle "25/11/2025",
-    "descricao": "Netflix + Spotify"
+    "tipo": "R",
+    "valor": 600.0,
+    "categoria": "Freelance",
+    "data": "25/11/2025",
+    "descricao": "Trabalho extra"
   }
 ]
