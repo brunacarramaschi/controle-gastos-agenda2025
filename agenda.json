@@ -1,12 +1,82 @@
 [
-  {"id":1,"titulo":"Dentista","data":"15/11/2025","hora":"14:30","local":"Clínica Sorriso","descricao":"Limpeza"},
-  {"id":2,"titulo":"Reunião UNISA","data":"20/11/2025","hora":"09:00","local":"Sala 305","descricao":"Apresentação"},
-  {"id":3,"titulo":"Entrega Relatório","data":"25/11/2025","hora":"23:59","local":"AVA","descricao":"PDF + GitHub"},
-  {"id":4,"titulo":"Cardiologista","data":"30/11/2025","hora":"10:15","local":"Hospital","descricao":"Check-up"},
-  {"id":5,"titulo":"Aniversário Mãe","data":"05/12/2025","hora":"19:00","local":"Casa","descricao":"Jantar"},
-  {"id":6,"titulo":"Prova Cálculo","data":"10/12/2025","hora":"08:00","local":"Sala 102","descricao":"Estudar"},
-  {"id":7,"titulo":"Fatura Cartão","data":"08/12/2025","hora":"23:59","local":"App","descricao":"Nubank"},
-  {"id":8,"titulo":"Entrevista","data":"12/12/2025","hora":"15:00","local":"Google Meet","descricao":"Estágio"},
-  {"id":9,"titulo":"Vacina Gripe","data":"18/12/2025","hora":"11:00","local":"Posto","descricao":"Dose"},
-  {"id":10,"titulo":"Viagem RJ","data":"20/12/2025","hora":"07:00","local":"Congonhas","descricao":"Férias"}
+  {
+    "id": 1,
+    "titulo": "Reunião com orientadora",
+    "data": "15/11/2025",
+    "hora": "14:00",
+    "local": "UNISA - Sala 305",
+    "descricao": "Apresentação do projeto"
+  },
+  {
+    "id": 2,
+    "titulo": "Dentista",
+    "data": "16/11/2025",
+    "hora": "10:30",
+    "local": "Clínica Sorriso",
+    "descricao": "Limpeza anual"
+  },
+  {
+    "id": 3,
+    "titulo": "Entrega Projeto UNISA",
+    "data": "17/11/2025",
+    "hora": "23:59",
+    "local": "AVA UNISA",
+    "descricao": "Prazo final"
+  },
+  {
+    "id": 4,
+    "titulo": "Aniversário da mãe",
+    "data": "20/11/2025",
+    "hora": "19:00",
+    "local": "Restaurante Italiano",
+    "descricao": "Jantar em família"
+  },
+  {
+    "id": 5,
+    "titulo": "Aula de Python",
+    "data": "22/11/2025",
+    "hora": "09:00",
+    "local": "Online - Zoom",
+    "descricao": "Módulo Avançado"
+  },
+  {
+    "id": 6,
+    "titulo": "Consulta nutricionista",
+    "data": "25/11/2025",
+    "hora": "16:00",
+    "local": "Clínica Vital",
+    "descricao": "Acompanhamento mensal"
+  },
+  {
+    "id": 7,
+    "titulo": "Pagamento boleto",
+    "data": "28/11/2025",
+    "hora": "17:00",
+    "local": "Banco",
+    "descricao": "Boleto UNISA"
+  },
+  {
+    "id": 8,
+    "titulo": "Reunião equipe",
+    "data": "30/11/2025",
+    "hora": "11:00",
+    "local": "Google Meet",
+    "descricao": "Planejamento dezembro"
+  },
+  {
+    "id": 9,
+    "titulo": "Exame de sangue",
+    "data": "02/12/2025",
+    "hora": "07:30",
+    "local": "Laboratório Fleury",
+    "descricao": "Check-up anual"
+  },
+  {
+    "id": 10,
+    "943": "Natal com família",
+    "data": "24/12/2025",
+    "hora": "20:00",
+    "local": "Casa dos pais",
+    "descricao": "Ceia de Natal"
+  }
 ]
