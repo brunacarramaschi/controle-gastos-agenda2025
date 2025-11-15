@@ -1,83 +1,98 @@
 [
-[
   {
     "id": 1,
-    "titulo": "Reunião de equipe",
-    "data": "15/11/2025",
-    "hora": "09:00",
-    "local": "Escritório - Sala de reuniões 3",
-    "descricao": "Reunião semanal de alinhamento do projeto"
+    "tipo": "R",
+    "valor": 4500.0,
+    "categoria": "Salário",
+    "data": "01/11/2025",
+    "descricao": "Salário mensal"
   },
   {
     "id": 2,
-    "titulo": "Consulta médica",
-    "data": "18/11/2025",
-    "hora": "14:30",
-    "local": "Clínica São Paulo - Av. Paulista, 1000",
-    "descricao": "Check-up anual"
+    "tipo": "D",
+    "valor": 1200.0,
+    "categoria": "Moradia",
+    "data": "05/11/2025",
+    "descricao": "Aluguel mensal"
   },
   {
     "id": 3,
-    "titulo": "Apresentação do projeto integrador",
-    "data": "20/11/2025",
-    "hora": "19:00",
-    "local": "UNISA - Campus São Paulo",
-    "descricao": "Apresentação final do sistema de controle financeiro"
+    "tipo": "D",
+    "valor": 450.0,
+    "categoria": "Alimentação",
+    "data": "07/11/2025",
+    "descricao": "Compras no supermercado"
   },
   {
     "id": 4,
-    "titulo": "Almoço com cliente",
-    "data": "22/11/2025",
-    "hora": "12:30",
-    "local": "Restaurante Figueira - Rua Augusta",
-    "descricao": "Reunião de negócios com cliente potencial"
+    "tipo": "D",
+    "valor": 280.0,
+    "categoria": "Transporte",
+    "data": "08/11/2025",
+    "descricao": "Vale transporte e combustível"
   },
   {
     "id": 5,
-    "titulo": "Dentista",
-    "data": "25/11/2025",
-    "hora": "10:00",
-    "local": "Odonto Center - Shopping Morumbi",
-    "descricao": "Limpeza e revisão semestral"
+    "tipo": "D",
+    "valor": 150.0,
+    "categoria": "Saúde",
+    "data": "10/11/2025",
+    "descricao": "Consulta médica"
   },
   {
     "id": 6,
-    "titulo": "Aula de Python avançado",
-    "data": "27/11/2025",
-    "hora": "20:00",
-    "local": "Online - Zoom",
-    "descricao": "Módulo 3: Análise de dados com Pandas"
+    "tipo": "D",
+    "valor": 350.0,
+    "categoria": "Educação",
+    "data": "12/11/2025",
+    "descricao": "Mensalidade curso online"
   },
   {
     "id": 7,
-    "titulo": "Aniversário da Maria",
-    "data": "30/11/2025",
-    "hora": "18:00",
-    "local": "Buffet Estrela - Zona Sul",
-    "descricao": "Festa de aniversário - Levar presente"
+    "tipo": "D",
+    "valor": 200.0,
+    "categoria": "Lazer",
+    "data": "14/11/2025",
+    "descricao": "Cinema e restaurante"
   },
   {
     "id": 8,
-    "titulo": "Reunião com orientadora",
-    "data": "02/12/2025",
-    "hora": "15:00",
-    "local": "UNISA - Sala da Prof. Maria",
-    "descricao": "Revisão final do TCC"
+    "tipo": "D",
+    "valor": 180.0,
+    "categoria": "Vestuário",
+    "data": "16/11/2025",
+    "descricao": "Roupas e calçados"
   },
   {
     "id": 9,
-    "titulo": "Workshop de educação financeira",
-    "data": "05/12/2025",
-    "hora": "09:00",
-    "local": "SEBRAE - Unidade Paulista",
-    "descricao": "Metodologia 50-30-20 na prática"
+    "tipo": "D",
+    "valor": 400.0,
+    "categoria": "Lazer",
+    "data": "18/11/2025",
+    "descricao": "Viagem fim de semana"
   },
   {
     "id": 10,
-    "titulo": "Pagamento das contas",
-    "data": "10/12/2025",
-    "hora": "09:00",
-    "local": "Online - Internet Banking",
-    "descricao": "Pagar: água, luz, internet e telefone"
+    "tipo": "D",
+    "valor": 900.0,
+    "categoria": "Investimentos",
+    "data": "20/11/2025",
+    "descricao": "Aplicação em renda fixa"
+  },
+  {
+    "id": 11,
+    "tipo": "D",
+    "valor": 250.0,
+    "categoria": "Alimentação",
+    "data": "22/11/2025",
+    "descricao": "Compras complementares"
+  },
+  {
+    "id": 12,
+    "tipo": "R",
+    "valor": 600.0,
+    "categoria": "Freelance",
+    "data": "25/11/2025",
+    "descricao": "Trabalho extra"
   }
 ]
