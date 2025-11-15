@@ -10,7 +10,6 @@ from fpdf import FPDF
 import os
 
 from database import init_db
-from auth import require_auth, show_user_info
 from db_operations import (
     get_transactions_for_user, add_transaction, delete_transaction,
     get_appointments_for_user, add_appointment, delete_appointment,
@@ -26,10 +25,8 @@ st.set_page_config(
 
 init_db()
 
-current_user = require_auth()
-
-if current_user:
-    show_user_info(current_user)
+# Sem autenticação para versão JSON
+current_user = None
 
 def calcular_estatisticas(gastos):
     if not gastos:
@@ -381,8 +378,8 @@ def gerar_pdf_relatorio(gastos, agenda, stats, analise):
 def dashboard_principal():
     st.title("💰 Dashboard Principal")
     
-    gastos = carregar_dados('gastos.json')
-    agenda = carregar_dados('agenda.json')
+    gastos = get_transactions_for_user()
+    agenda = get_appointments_for_user()
     
     stats = calcular_estatisticas(gastos)
     analise = analisar_metodo_50_30_20(gastos)
@@ -449,8 +446,6 @@ def dashboard_principal():
 def cadastrar_transacao():
     st.title("➕ Cadastrar Nova Transação")
     
-    gastos = carregar_dados('gastos.json')
-    
     with st.form("form_transacao"):
         col1, col2 = st.columns(2)
         
@@ -475,20 +470,10 @@ def cadastrar_transacao():
         submitted = st.form_submit_button("💾 Salvar Transação")
         
         if submitted:
-            novo_id = max([g['id'] for g in gastos], default=0) + 1
+            tipo_codigo = 'R' if tipo == "Receita" else 'D'
             
-            nova_transacao = {
-                'id': novo_id,
-                'tipo': 'R' if tipo == "Receita" else 'D',
-                'valor': float(valor),
-                'categoria': categoria,
-                'data': data.strftime('%d/%m/%Y'),
-                'descricao': descricao
-            }
-            
-            gastos.append(nova_transacao)
-            
-            if salvar_dados('gastos.json', gastos):
+            if add_transaction(None, tipo_codigo, categoria, float(valor), 
+                             data.strftime('%d/%m/%Y'), descricao):
                 st.success("✅ Transação cadastrada com sucesso!")
                 st.balloons()
             else:
@@ -497,6 +482,7 @@ def cadastrar_transacao():
     st.divider()
     st.subheader("📋 Transações Recentes")
     
+    gastos = get_transactions_for_user()
     if gastos:
         df = pd.DataFrame(gastos)
         df['tipo_nome'] = df['tipo'].apply(lambda x: '💵 Receita' if x == 'R' else '💸 Despesa')
@@ -510,7 +496,7 @@ def cadastrar_transacao():
 def analise_financeira():
     st.title("📊 Análise Financeira Detalhada")
     
-    gastos = carregar_dados('gastos.json')
+    gastos = get_transactions_for_user()
     
     if not gastos:
         st.warning("Nenhuma transação cadastrada. Adicione transações primeiro.")
@@ -612,8 +598,6 @@ def analise_financeira():
 def gerenciar_agenda():
     st.title("📅 Gerenciamento de Agenda")
     
-    agenda = carregar_dados('agenda.json')
-    
     tab1, tab2, tab3 = st.tabs(["➕ Adicionar", "📋 Listar", "📅 Calendário"])
     
     with tab1:
@@ -634,26 +618,17 @@ def gerenciar_agenda():
             submitted = st.form_submit_button("💾 Salvar Compromisso")
             
             if submitted and titulo:
-                novo_id = max([c['id'] for c in agenda], default=0) + 1
-                
-                novo_compromisso = {
-                    'id': novo_id,
-                    'titulo': titulo,
-                    'data': data.strftime('%d/%m/%Y'),
-                    'hora': hora.strftime('%H:%M'),
-                    'local': local,
-                    'descricao': descricao
-                }
-                
-                agenda.append(novo_compromisso)
-                
-                if salvar_dados('agenda.json', agenda):
+                if add_appointment(None, titulo, data.strftime('%d/%m/%Y'),
+                                 hora.strftime('%H:%M'), local, descricao):
                     st.success("✅ Compromisso agendado com sucesso!")
                     st.balloons()
+                else:
+                    st.error("❌ Erro ao salvar compromisso.")
     
     with tab2:
         st.subheader("Todos os Compromissos")
         
+        agenda = get_appointments_for_user()
         if agenda:
             agenda_ordenada = sorted(agenda, 
                                     key=lambda x: datetime.strptime(x['data'], '%d/%m/%Y'))
@@ -664,20 +639,21 @@ def gerenciar_agenda():
                     st.write(f"**Descrição:** {comp['descricao']}")
                     
                     if st.button(f"🗑️ Excluir", key=f"del_{comp['id']}"):
-                        agenda = [c for c in agenda if c['id'] != comp['id']]
-                        if salvar_dados('agenda.json', agenda):
-                            st.success("✅ Compromisso excluído! Navegue para outra aba e volte para ver as alterações.")
+                        if delete_appointment(comp['id']):
+                            st.success("✅ Compromisso excluído!")
+                            st.rerun()
         else:
             st.info("Nenhum compromisso cadastrado.")
     
     with tab3:
+        agenda = get_appointments_for_user()
         criar_calendario_visual(agenda)
 
 def relatorios_graficos():
     st.title("📄 Relatórios e Exportação")
     
-    gastos = carregar_dados('gastos.json')
-    agenda = carregar_dados('agenda.json')
+    gastos = get_transactions_for_user()
+    agenda = get_appointments_for_user()
     
     if not gastos:
         st.warning("Nenhuma transação cadastrada.")
@@ -769,3 +745,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
